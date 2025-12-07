@@ -1,0 +1,53 @@
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hide header on scroll down, show on scroll up */
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
+}
+
+.header-visible {
+    animation: slideDown 0.3s ease forwards;
+}
+
+.header-hidden {
+    animation: slideUp 0.3s ease forwards;
+}
+
+/* Ensure header is always on top */
+header {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Fix for mobile viewport */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem !important;
+    }
+    
+    body {
+        padding-top: 60px; /* Smaller padding for mobile */
+    }
+    
+    .hero {
+        min-height: calc(100vh - 60px);
+        padding: 3rem 1rem 1rem;
+    }
+}
+
+/* Fix for Safari */
+@supports (-webkit-touch-callout: none) {
+    header {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        top: 0;
+    }
+}

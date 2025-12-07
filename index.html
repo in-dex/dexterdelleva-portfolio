@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dexter B. Delleva - AI-assisted IT professional specializing in modern development with tools like DeepSeek, ChatGPT, and Claude AI. Full-stack developer creating innovative solutions.">
+    <meta name="keywords" content="AI-assisted development, DeepSeek, ChatGPT, Claude AI, GitHub Copilot, .NET MAUI, Blazor, Unity, Full-Stack Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexter B. Delleva | IT Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="geometric.css">
+    <link rel="stylesheet" href="scroll-effect.css">
+    <link rel="stylesheet" href="slide-nav.css">
+    <link rel="stylesheet" href="entrance-effect.css">
+
+    
+</head>
+<body>
+
+<div class="side-nav" id="sideNav">
+    <nav class="side-nav-menu">
+        <ul>
+            <li><a href="#home" class="side-nav-item" data-section="home" data-tooltip="Home">
+                <span class="side-nav-icon">🏠</span>
+                <span class="side-nav-text">Home</span>
+                <span class="active-dot"></span>
+            </a></li>
+            <li><a href="#about" class="side-nav-item" data-section="about" data-tooltip="About">
+                <span class="side-nav-icon">🌈</span>
+                <span class="side-nav-text">About</span>
+                <span class="active-dot"></span>
+            </a></li>
+            <li><a href="#projects" class="side-nav-item" data-section="projects" data-tooltip="Projects">
+                <span class="side-nav-icon">🚀</span>
+                <span class="side-nav-text">Projects</span>
+                <span class="active-dot"></span>
+            </a></li>
+            <li><a href="#experience" class="side-nav-item" data-section="experience" data-tooltip="Experience">
+                <span class="side-nav-icon">💼</span>
+                <span class="side-nav-text">Experience</span>
+                <span class="active-dot"></span>
+            </a></li>
+            <li><a href="#philosophy" class="side-nav-item" data-section="philosophy" data-tooltip="Philosophy">
+                <span class="side-nav-icon">🧠</span>
+                <span class="side-nav-text">Philosophy</span>
+                <span class="active-dot"></span>
+            </a></li>
+            <li><a href="#skills" class="side-nav-item" data-section="skills" data-tooltip="Skills">
+                <span class="side-nav-icon">🔨</span>
+                <span class="side-nav-text">Skills & Interest</span>
+                <span class="active-dot"></span>
+            </a></li>
+            <li><a href="#contact" class="side-nav-item" data-section="contact" data-tooltip="Contact">
+                <span class="side-nav-icon">📬</span>
+                <span class="side-nav-text">Contact</span>
+                <span class="active-dot"></span>
+            </a></li>
+        </ul>
+    </nav>
+    
+    <!-- Progress indicator -->
+    <div class="side-nav-progress">
+        <div class="progress-bar">
+            <div class="progress-fill" id="navProgressFill"></div>
+        </div>
+        <div class="progress-text" id="navProgressText">0%</div>
+    </div>
+    
+    <!-- Toggle button -->
+    <!-- <button class="nav-toggle" id="navToggle" title="Toggle Navigation">
+        <i class="fas fa-chevron-left"></i>
+    </button> -->
+    
+    <!-- Back to Top button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <!-- <i class="fas fa-arrow-up"></i> -->
+    </button>
+</div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Dexter B. Delleva</div>
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills & Interest</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">       
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>Dexter B. Delleva</h1>
+                    <div class="tagline">All-Rounder IT Professional/Enthusiast | Full-Stack Developer (AI-Assisted) | Problem Solver</div>
+                    <div class="intro-box">
+                        <p><span class="highlight">Hello! I'm Dexter, a passionate all-rounder IT based in Iloilo, Philippines.</span></p>
+                        <p>With years of experience in both private and public sector, I thrive at the intersection of system development, design, hardware and network. My passion lies in being of service and value to whichever project or institution or company that I become a part of, with the goal of progress.</p>
+                    </div>
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
+                <div class="hero-image fade-in">
+                    <img src="profile-pic.jpg" alt="Dexter B. Delleva" class="profile-img">
+                </div>
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+            <h2 class="section-title">🌈 About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a creative thinker, a problem solver, and an avid learner, passionate about always exploring and adapting to the changes in the industry. When I'm not pushing buttons, I tend to meditate and have adventures, capturing and living life.</p>
+                    <p>My journey in IT has taken me through various roles - from IT Consultant/Support, System and Network Administrator and Project Technical Staff, to currently Freelancing. This diverse experience allows me to see technology projects from multiple perspectives.</p>
+                    <p>I believe in continuous learning and staying updated with the latest technologies while maintaining a solid foundation in core IT principles.</p>
+                    <div class="ai-development-section fade-in" style="margin-top: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">
+                            <i class="fas fa-brain"></i> AI-Powered Development Approach
+                        </h3>
+                        <p>I embrace the future of software development by integrating AI tools into my workflow:</p>
+                        
+                        <div class="ai-tools-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                            <div class="ai-tool-card" style="background: rgba(58, 134, 255, 0.1); padding: 1rem; border-radius: 10px; border-left: 3px solid var(--primary);">
+                                <h4 style="color: var(--primary); margin-bottom: 0.5rem;">DeepSeek</h4>
+                                <p style="font-size: 0.9rem;">For complex problem-solving and architecture design</p>
+                            </div>
+                            <div class="ai-tool-card" style="background: rgba(58, 134, 255, 0.1); padding: 1rem; border-radius: 10px; border-left: 3px solid #10a37f;">
+                                <h4 style="color: #10a37f; margin-bottom: 0.5rem;">ChatGPT/GPT-4</h4>
+                                <p style="font-size: 0.9rem;">Rapid prototyping and code generation</p>
+                            </div>
+                            <div class="ai-tool-card" style="background: rgba(58, 134, 255, 0.1); padding: 1rem; border-radius: 10px; border-left: 3px solid #d4a374;">
+                                <h4 style="color: #d4a374; margin-bottom: 0.5rem;">Claude AI</h4>
+                                <p style="font-size: 0.9rem;">Documentation and code review assistance</p>
+                            </div>
+                            <div class="ai-tool-card" style="background: rgba(58, 134, 255, 0.1); padding: 1rem; border-radius: 10px; border-left: 3px solid #4078c0;">
+                                <h4 style="color: #4078c0; margin-bottom: 0.5rem;">GitHub Copilot</h4>
+                                <p style="font-size: 0.9rem;">Real-time code completion and suggestions</p>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top: 1.5rem; font-style: italic; color: #aaa;">
+                            "Currently I practice <strong>AI-assisted development</strong> - using AI as a collaborative partner to enhance productivity, 
+                            explore innovative solutions, and maintain code quality while keeping human creativity and oversight at the core."
+                        </p>
+                    </div>        
+                </div>
+                <div class="about-icons">
+                    <div class="about-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="about-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="about-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="about-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">🚀 Projects</h2>
+        <div class="projects-counter">Showing <span id="projectCount">11</span> innovative projects</div>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="app">Mobile Apps</button>
+            <button class="filter-btn" data-filter="game">Games</button>
+            <button class="filter-btn" data-filter="web">Web Systems</button>
+            <button class="filter-btn" data-filter="business">Business Systems</button>
+        </div>
+        <div class="projects-grid">
+            <!-- QuizScan App - Updated to MAUI -->
+            <div class="project-card fade-in" data-category="app" data-project="quizscan">
+                <div class="project-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div>QuizScan MAUI</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Mobile App</span>
+                    <h3 class="project-title">"QuizScan" - MAUI Mobile App</h3>
+                    <p>An app designed to aid both faculty and students to efficiently create and record quizzes by capturing photos to be automatically graded. Now built with .NET MAUI for cross-platform compatibility.</p>
+                    <div class="project-tools">
+                        <span class="tool">.NET MAUI</span>
+                        <span class="tool">C#</span>
+                        <span class="tool">Azure</span>
+                        <span class="tool">ML.NET</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports Events Management App - Updated to WinUI3/MAUI -->
+            <div class="project-card fade-in" data-category="app web" data-project="sportsevents">
+                <div class="project-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div>Sports Events</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Desktop & Mobile App</span>
+                    <h3 class="project-title">"Sports Events Management" - WinUI3 & MAUI</h3>
+                    <p>A hybrid solution with WinUI3 desktop app for admin management and MAUI mobile app for coordinators and users. Complete sports event scheduling and management system.</p>
+                    <div class="project-tools">
+                        <span class="tool">WinUI 3</span>
+                        <span class="tool">.NET MAUI</span>
+                        <span class="tool">SQL Server</span>
+                        <span class="tool">Azure Functions</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Iconic Quest Game -->
+            <div class="project-card fade-in" data-category="game" data-project="iconicquest">
+                <div class="project-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div>Iconic Quest</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Mobile Game</span>
+                    <h3 class="project-title">"Iconic Quest" - Mobile Game App</h3>
+                    <p>A game-based learning on English education where the player can improve their English speech skills by offering engaging game play, using symbols and icons to determine the correct answers.</p>
+                    <div class="project-tools">
+                        <span class="tool">Adobe Photoshop</span>
+                        <span class="tool">Visual Code</span>
+                        <span class="tool">Unity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Damathify Game -->
+            <div class="project-card fade-in" data-category="game" data-project="damathify">
+                <div class="project-img" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <div>Damathify</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Mobile Game</span>
+                    <h3 class="project-title">"Damathify" - Mobile Game App</h3>
+                    <p>A game-based learning in the form of a Filipino Checkers board game called Dama with math problems to be solved. Offers an online multiplayer mode to compete and play with friends.</p>
+                    <div class="project-tools">
+                        <span class="tool">Adobe Photoshop</span>
+                        <span class="tool">Visual Code</span>
+                        <span class="tool">Unity</span>
+                        <span class="tool">PUN</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Museum -->
+            <div class="project-card fade-in" data-category="web" data-project="digitalmuseum">
+                <div class="project-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <div>Digital Museum</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Web System / Desktop</span>
+                    <h3 class="project-title">"Digital Museum" - Thesis Project</h3>
+                    <p>A digital platform for showcasing artifacts and historical items in an interactive, virtual museum environment. Developed as part of my BS Information Technology thesis.</p>
+                    <div class="project-tools">
+                        <span class="tool">HTML/CSS</span>
+                        <span class="tool">JavaScript</span>
+                        <span class="tool">PHP</span>
+                        <span class="tool">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cipher Quest Game -->
+            <div class="project-card fade-in" data-category="game" data-project="cipherquest">
+                <div class="project-img" style="background: linear-gradient(135deg, #8A2387 0%, #E94057 50%, #F27121 100%);">
+                    <div>Cipher Quest</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Mobile Game</span>
+                    <h3 class="project-title">"Cipher Quest" - 2D Educational Game</h3>
+                    <p>A game-based learning adventure focusing on solving different cipher methods (Caesar, Vigenère, Substitution). Players progress through levels by decrypting messages to advance the story.</p>
+                    <div class="project-tools">
+                        <span class="tool">Unity</span>
+                        <span class="tool">C#</span>
+                        <span class="tool">2D Game Dev</span>
+                        <span class="tool">Educational</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FoodSubay App -->
+            <div class="project-card fade-in" data-category="app" data-project="foodsubay">
+                <div class="project-img" style="background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);">
+                    <div>FoodSubay</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Mobile App</span>
+                    <h3 class="project-title">"FoodSubay" - Food Subscription App</h3>
+                    <p>A mobile application for food subscription services developed with Visual Studio Blazor MAUI Hybrid. Features include meal planning, subscription management, and delivery tracking.</p>
+                    <div class="project-tools">
+                        <span class="tool">Blazor MAUI</span>
+                        <span class="tool">.NET 8</span>
+                        <span class="tool">Stripe API</span>
+                        <span class="tool">Google Maps</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Free Community POS -->
+            <div class="project-card fade-in" data-category="app business" data-project="freecpos">
+                <div class="project-img" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                    <div>FreeCPOS Suite</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Mobile Business App</span>
+                    <h3 class="project-title">"Free Community POS" - Complete POS Suite</h3>
+                    <p>A comprehensive free POS system for small businesses. Complete inventory management, sales tracking, analytics, customer management, and business reporting tools - all completely free.</p>
+                    <div class="project-tools">
+                        <span class="tool">.NET MAUI</span>
+                        <span class="tool">SQLite</span>
+                        <span class="tool">Blazor</span>
+                        <span class="tool">Analytics API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 716 Corporate Housing Website -->
+            <div class="project-card fade-in" data-category="web" data-project="corporatehousing">
+                <div class="project-img" style="background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);">
+                    <div>716 Corporate</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Website Demo</span>
+                    <h3 class="project-title">"716 Corporate Housing" - Modern Business Website</h3>
+                    <p>A live demo website for a corporate housing business featuring modern design, content management system, Google Reviews integration, booking system, and responsive design.</p>
+                    <div class="project-tools">
+                        <span class="tool">HTML5/CSS3</span>
+                        <span class="tool">JavaScript</span>
+                        <span class="tool">Google APIs</span>
+                        <span class="tool">Responsive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Trivia Game -->
+            <div class="project-card fade-in" data-category="web game" data-project="quiztrivia">
+                <div class="project-img" style="background: linear-gradient(135deg, #1D2671 0%, #C33764 100%);">
+                    <div>Space Quiz</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Browser Game</span>
+                    <h3 class="project-title">"Space Quiz Trivia" - Browser Game</h3>
+                    <p>A space-themed quiz game with rich visuals, leaderboards, timer system, and scoring. Built with pure HTML, CSS, and JavaScript with engaging space visuals and sound effects.</p>
+                    <div class="project-tools">
+                        <span class="tool">HTML5</span>
+                        <span class="tool">CSS3/Animations</span>
+                        <span class="tool">JavaScript</span>
+                        <span class="tool">Canvas API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arkela Property Management -->
+            <div class="project-card fade-in" data-category="app web business" data-project="arkela">
+                <div class="project-img" style="background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);">
+                    <div>Arkela PMS</div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Business System</span>
+                    <h3 class="project-title">"Arkela Property Management System"</h3>
+                    <p>A comprehensive property management system with desktop and mobile versions. Features include rent management, invoicing, tenant management, analytics, contract management, and meter readings.</p>
+                    <div class="project-tools">
+                        <span class="tool">Blazor MAUI Hybrid</span>
+                        <span class="tool">.NET 8</span>
+                        <span class="tool">SQL Server</span>
+                        <span class="tool">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">💼 Experience</h2>
+        <div class="timeline">
+            <!-- Freelance Developer -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date">Present</div>
+                    <h3>Freelance Developer</h3>
+                    <p>Developing thesis systems of students.</p>
+                </div>
+            </div>
+
+            <!-- Project Technical Staff III -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date">Sep 2022 – Dec 2023</div>
+                    <h3>Project Technical Staff III - Commission on Higher Education Region VI</h3>
+                    <p>Ensuring computer hardware and network infrastructure maintenance. Setup and maintain various hardware and software technologies. Hosting webinars/meetings and supervising student training.</p>
+                </div>
+            </div>
+
+            <!-- System and Network Administrator -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date">May 2018 – Dec 2021</div>
+                    <h3>System and Network Administrator - Global One Integrated Business Services Inc.</h3>
+                    <p>In-charge of technical and POS network concerns. Auditing, monitoring and inventory of IT assets. Network designing, planning, and management. Backup and disaster recovery implementation.</p>
+                </div>
+            </div>
+
+            <!-- IT Consultant -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date">Aug 2012 – Dec 2013</div>
+                    <h3>IT Consultant - Pepsi Cola Products Philippines Incorporated</h3>
+                    <p>Provided technical support via phone call or remote. Database administration and migration. Network planning and optimization recommendations. Worked on national rollouts of new systems.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education with Awards -->
+        <h2 class="section-title" style="margin-top: 5rem;">🎓 Education</h2>
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date">2013</div>
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p>AMA Computer College Iloilo</p>
+                    <p>Specialized in Digital + Media</p>
+                    <p>Thesis: "Digital Museum"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-details fade-in">
+            <div class="education-header">
+                <h3>AMA Computer College Iloilo</h3>
+                <p>Bachelor of Science in Information Technology</p>
+            </div>
+            
+            <h4 style="color: var(--accent); margin-bottom: 1rem;">🏆 Awards & Recognitions:</h4>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <h4>Leadership Award</h4>
+                    <p>Recognized for outstanding leadership and team management skills</p>
+                </div>
+                <div class="award-card">
+                    <h4>Best in Cisco Networking</h4>
+                    <p>Excellence in network design and implementation</p>
+                </div>
+                <div class="award-card">
+                    <h4>Best in System Design</h4>
+                    <p>Outstanding system architecture and design projects</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications & Trainings -->
+        <div class="certifications-section fade-in">
+            <h3 class="section-title" style="font-size: 2rem; margin-top: 4rem;">📜 Certifications & Trainings</h3>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h4>Microsoft Azure Training</h4>
+                    <p class="cert-date">Ongoing</p>
+                    <p>Cloud infrastructure and services</p>
+                </div>
+                <div class="cert-card">
+                    <h4>ICIP OPSWAT</h4>
+                    <p>Introduction to Critical Infrastructure Protection</p>
+                </div>
+                <div class="cert-card">
+                    <h4>Lean Six Sigma White Belt</h4>
+                    <p>Process improvement methodology</p>
+                </div>
+                <div class="cert-card">
+                    <h4>Cybersecurity Incident Response</h4>
+                    <p>Basics of Cybersecurity Incident Response and Handling</p>
+                </div>
+                <div class="cert-card">
+                    <h4>Data Privacy Protection</h4>
+                    <p>Data Privacy Protection Competency Framework</p>
+                </div>
+                <div class="cert-card">
+                    <h4>Cybersecurity Competency</h4>
+                    <p>Cybersecurity Competency Framework</p>
+                </div>
+                <div class="cert-card">
+                    <h4>Cloud Certification AZ 104</h4>
+                    <p>Microsoft Azure Administrator certification event</p>
+                </div>
+                <div class="cert-card">
+                    <h4>Ruckus Intertouch Netcamp</h4>
+                    <p>Advanced networking certification</p>
+                </div>
+                <div class="cert-card">
+                    <h4>CCNA Exploration 1-4</h4>
+                    <p>Cisco Certified Network Associate complete course</p>
+                </div>
+                <div class="cert-card">
+                    <h4>Career Entry Course for Software Developers</h4>
+                    <p>JAVA NC IV certification</p>
+                </div>
+                <div class="cert-card">
+                    <h4>PIC Microcontroller Programming Workshop</h4>
+                    <p>Embedded systems programming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Philosophy Section -->
+    <section id="philosophy">
+        <h2 class="section-title">🚀 Development Philosophy</h2>
+        <div class="philosophy-grid fade-in">
+            <div class="philosophy-card">
+                <div class="philosophy-icon" style="color: var(--primary);">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI-Assisted Development</h3>
+                <p>Leveraging AI tools like DeepSeek, ChatGPT, and Claude as collaborative partners to accelerate development, explore innovative solutions, and enhance code quality while maintaining human oversight.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-icon" style="color: var(--accent);">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Vibe Coding</h3>
+                <p>Embracing the modern "vibe coding" approach - using AI to translate ideas into code quickly, focusing on problem-solving and creativity.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-icon" style="color: var(--success);">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Human-AI Collaboration</h3>
+                <p>Believing in the synergy between human intuition and AI capabilities - using AI for tedious tasks while applying human judgment for architecture, user experience, and ethical considerations.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-icon" style="color: var(--warning);">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Modern Tool Stack</h3>
+                <p>Continuously evolving with the latest tools - from traditional IDEs to AI pair programmers, ensuring optimal productivity and progressing in the rapidly changing tech landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">🔨 Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-palette"></i> Design & Creative</h3>
+                <ul class="skill-list">
+                    <li>Adobe Photoshop  </li>
+                    <li>Adobe Premiere  </li>
+                    <li>Adobe After Effects  </li>
+                    <li>Canva  </li>
+                    <li>UI/UX Design  </li>
+                </ul>
+            </div>
+
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-code"></i> Development</h3>
+                <ul class="skill-list">
+                    <li>System Development  </li>
+                    <li>Mobile App Development  </li>
+                    <li>Game Development  </li>
+                    <li>Web Development  </li>
+                </ul>
+            </div>
+
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-server"></i> Infrastructure & Networking</h3>
+                <ul class="skill-list">
+                    <li>Network Monitoring and Administration </li>
+                    <li>Backup and Replication  </li>
+                    <li>Server Administration  </li>
+                    <li>Virtual Machine  </li>
+                    <li>Troubleshooting & IT Support </li>
+                </ul>
+            </div>
+
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                <ul class="skill-list">
+                    <li>Visual Studio / VS Code  </li>
+                    <li>Unity Game Engine  </li>
+                    <li>Firebase  </li>
+                    <li>Diagramming Tools  </li>
+                </ul>
+            </div>
+
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-robot"></i> AI & Modern Tools</h3>
+                <ul class="skill-list">
+                    <li>DeepSeek </li>
+                    <li>ChatGPT/GPT-4</li>
+                    <li>Claude AI  </li>
+                    <li>GitHub Copilot  </li>
+                    <li>AI-Assisted Development </li>
+                    <li>Prompt Engineering  </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Technical Expertise -->
+        <div class="technical-expertise fade-in">
+            <h3 class="section-title" style="font-size: 2rem; margin-top: 4rem;">🛠️ Technical Expertise</h3>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>📊 Software & Applications</h3>
+                    <p>Microsoft Office Products, Google Suite, Helpdesk Systems, Backup & Replication (Veeam, Acronis), Network Monitoring (LanState, Ekahau Site Survey), Conferencing Tools (Zoom, Teams), Diagramming Tools (Edrawmax)</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Veeam</span>
+                        <span class="expertise-tag">Acronis</span>
+                        <span class="expertise-tag">LanState</span>
+                        <span class="expertise-tag">Ekahau</span>
+                    </div>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3>💻 Platforms & Operating Systems</h3>
+                    <p>Windows OS [Strong], Windows Server, VMware ESXI, Ubuntu (Basic), MS Azure (Basic)</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Windows Server</span>
+                        <span class="expertise-tag">VMware ESXI</span>
+                        <span class="expertise-tag">Ubuntu</span>
+                        <span class="expertise-tag">MS Azure</span>
+                    </div>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3>🔌 Networking Tools & Concepts</h3>
+                    <p>LAN/WAN Networking, Ruckus Wireless Technology, Cisco Networking, Network Design & Planning, FTP, Endpoint Protection</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Cisco</span>
+                        <span class="expertise-tag">Ruckus</span>
+                        <span class="expertise-tag">LAN/WAN</span>
+                        <span class="expertise-tag">FTP</span>
+                    </div>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3>👨‍💻 Development & Concepts</h3>
+                    <p>Programming (VB.net, PHP), Web Development/Design (HTML5, CSS, PHP), Database Management, Server Administration, Video/Photo Editing, Asset Management</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">VB.net</span>
+                        <span class="expertise-tag">PHP</span>
+                        <span class="expertise-tag">HTML5/CSS</span>
+                        <span class="expertise-tag">Database</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <h3>🤖 AI & Modern Development Tools</h3>
+                    <p>DeepSeek, ChatGPT/GPT-4, Claude AI, GitHub Copilot, AI-Assisted Development, Prompt Engineering, Vibe Coding, AI-Powered Debugging, Code Optimization</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">DeepSeek</span>
+                        <span class="expertise-tag">GPT-4</span>
+                        <span class="expertise-tag">Claude AI</span>
+                        <span class="expertise-tag">Copilot</span>
+                        <span class="expertise-tag">Vibe Coding</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Interests -->
+        <div class="interests-section fade-in">
+            <h3 class="section-title" style="font-size: 2rem; margin-top: 4rem;">🌟 Personal Interests</h3>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h4>Travels & Adventures</h4>
+                    <p>Exploring new places and cultures</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h4>Hiking</h4>
+                    <p>Connecting with nature through trails</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4>Video Games</h4>
+                    <p>Gaming for fun and inspiration</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Continuous Learning</h4>
+                    <p>Always growing and adapting</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4>Photography</h4>
+                    <p>Capturing life's moments</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h4>Meditation</h4>
+                    <p>Mindfulness and focus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact">
+    <h2 class="section-title">📬 Let's Connect</h2>
+    <p class="section-subtitle fade-in" style="text-align: center; margin-bottom: 3rem; color: #aaa; max-width: 600px; margin-left: auto; margin-right: auto;">
+        I'm always open to discussing new opportunities, collaborations, or just chatting about technology!
+    </p>
+    
+    <div class="contact-grid">
+        <!-- Email Card -->
+        <div class="contact-card fade-in">
+            <div class="contact-card-icon" style="background: rgba(234, 67, 53, 0.1);">
+                <i class="fas fa-envelope" style="color: #ea4335;"></i>
+            </div>
+            <h3>Email</h3>
+            <p>dexterdelleva@gmail.com</p>
+            <a href="mailto:dexterdelleva@gmail.com" class="contact-action-btn" style="background: rgba(234, 67, 53, 0.2); color: #ea4335;">
+                <i class="fas fa-paper-plane"></i> Send Email
+            </a>
+        </div>
+
+        <!-- Phone Card -->
+        <div class="contact-card fade-in">
+            <div class="contact-card-icon" style="background: rgba(0, 150, 136, 0.1);">
+                <i class="fas fa-phone-alt" style="color: #009688;"></i>
+            </div>
+            <h3>Phone</h3>
+            <p>+63 915 609 6327</p>
+            <a href="tel:+639156096327" class="contact-action-btn" style="background: rgba(0, 150, 136, 0.2); color: #009688;">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+        </div>
+
+        <!-- Facebook Card -->
+        <div class="contact-card fade-in">
+            <div class="contact-card-icon" style="background: rgba(24, 119, 242, 0.1);">
+                <i class="fab fa-facebook-f" style="color: #1877f2;"></i>
+            </div>
+            <h3>Facebook</h3>
+            <p>Dexter B. Delleva</p>
+            <a href="https://www.facebook.com/dexter.delleva" target="_blank" class="contact-action-btn" style="background: rgba(24, 119, 242, 0.2); color: #1877f2;">
+                <i class="fab fa-facebook-f"></i> Visit Profile
+            </a>
+        </div>
+
+        <!-- LinkedIn Card -->
+        <div class="contact-card fade-in">
+            <div class="contact-card-icon" style="background: rgba(10, 102, 194, 0.1);">
+                <i class="fab fa-linkedin-in" style="color: #0a66c2;"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Dexter B. Delleva</p>
+            <a href="https://linkedin.com/in/dexter-delleva-2989051a3" target="_blank" class="contact-action-btn" style="background: rgba(10, 102, 194, 0.2); color: #0a66c2;">
+                <i class="fab fa-linkedin-in"></i> Connect
+            </a>
+        </div>
+
+        <!-- GitHub Card -->
+        <div class="contact-card fade-in">
+            <div class="contact-card-icon" style="background: rgba(24, 23, 23, 0.1);">
+                <i class="fab fa-github" style="color: #181717;"></i>
+            </div>
+            <h3>GitHub</h3>
+            <p>@in-dex</p>
+            <a href="https://github.com/in-dex" target="_blank" class="contact-action-btn" style="background: rgba(24, 23, 23, 0.2); color: #fff;">
+                <i class="fab fa-github"></i> View Projects
+            </a>
+        </div>
+
+        <!-- Location Card -->
+        <div class="contact-card fade-in">
+            <div class="contact-card-icon" style="background: rgba(255, 109, 0, 0.1);">
+                <i class="fas fa-map-marker-alt" style="color: #ff6d00;"></i>
+            </div>
+            <h3>Location</h3>
+            <p>Iloilo, Philippines</p>
+            <a href="https://maps.google.com/?q=Iloilo+Philippines" target="_blank" class="contact-action-btn" style="background: rgba(255, 109, 0, 0.2); color: #ff6d00;">
+                <i class="fas fa-map-marked-alt"></i> View on Map
+            </a>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="contact-cta fade-in">
+        <div class="cta-content">
+            <h3 style="color: var(--primary); margin-bottom: 1rem;">
+                <i class="fas fa-handshake"></i> Ready to Collaborate?
+            </h3>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                Whether you have a project in mind, need technical consultation, or just want to connect,
+                I'd love to hear from you!
+            </p>
+            <div class="cta-buttons">
+                <a href="mailto:dexterdelleva@gmail.com" class="btn" style="background: linear-gradient(90deg, var(--primary), var(--secondary));">
+                    <i class="fas fa-envelope"></i> Send Me an Email
+                </a>
+                <a href="tel:+639171234567" class="btn-outline">
+                    <i class="fas fa-phone-alt"></i> Give Me a Call
+                </a>
+            </div>
+            <p class="cta-note" style="margin-top: 2rem; color: #aaa; font-style: italic;">
+                <i class="fas fa-clock"></i> Response time: Usually within 24 hours
+            </p>
+        </div>
+    </div>
+
+    <!-- Availability Status -->
+    <div class="availability-status fade-in">
+        <div class="status-indicator available">
+            <div class="status-dot"></div>
+            <span>Currently available for new opportunities</span>
+        </div>
+        <p class="status-note">
+            Open to gig, part-time, freelance, and consulting roles
+        </p>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/dexter.delleva" class="social-link" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="mailto:dexterdelleva@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+             <a href="#" class="social-link" title="AI-Assisted Development">
+                <i class="fas fa-robot"></i>
+            </a>
+        </div>
+        <p>© 2025 Dexter B. Delleva. All Rights Reserved.</p>
+        <p style="color: #666; margin-top: 0.5rem;">Passionate IT Professional/Enthusiast | System Developer | Network Administrator | Creative Designer</p>
+    </footer>
+
+   <script src="script.js"></script>
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
