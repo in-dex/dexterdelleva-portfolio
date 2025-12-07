@@ -117,6 +117,7 @@ nav a:hover::after {
     padding: 0rem 2rem 2rem;
     max-width: 1400px;
     margin: 0 auto;
+    opacity: 0.7;
 }
 
 
@@ -1571,4 +1572,5 @@ footer {
 
 .copy-notification.show {
     opacity: 1;
+
 }
